@@ -3,8 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" integrity="sha512-Jp3oCtkKo8j/WRrHq2jrYMtJogclQybtR6+81arCLTO/TvWj3oaF4NkZQs2bTqWJ8An8L2MLKKfvsn3H8vZP1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css" integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" integrity="sha512-Jp3oCtkKo8j/WRrHq2jrYMtJogclQybtR6+81arCLTO/TvWj3oaF4NkZQs2bTqWJ8An8L2MLKKfvsn3H8vZP1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css" integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
    <link rel="stylesheet" href="../style.css">
    <title>URL Shortening app</title>
 </head>
@@ -15,24 +15,26 @@
    <div class="wrapper">
       <div class="desc">
          <label for="link">Enter link</label>
-         <input type="text" name="input-link" placeholder="https://site.com"> 
-         <input type="submit" name="submit" value="Create Short URL">
+         <input type="text" name="input-link" placeholder="https://site.com" id="longUrl"> 
+         <button id="create-short-url"> Create Short URL</button>
+      </div>
+      <div class="result">
+         <a href="#" id="shortUrl" target="_blank"></a>
       </div>   
    </div>
    <div class="list">
       <h1>Shorten URLs</h1>
       <div class="container">
-         <table border="1" cellspacing="0">
-            <tr>
-               <th>Actual URL</th>
-               <th>Shorten URL</th>
-               <th>Count</th>
-            </tr>
-            <tr>
-               <td>http://google.com</td>
-               <td>http://localhost:3000/jfdig</td>
-               <td>545</td>
-            </tr>
+         <table border="1" cellspacing="0" id="listUrls">
+            <thead>
+               <tr>
+                  <th>Actual URL</th>
+                  <th>Shorten URL</th>
+                  <th>Count</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
          </table>
       </div>
    </div>
@@ -42,5 +44,6 @@
          <a href="https://github.com/Emmy-Gretta" target="_blank"><i class="ri-github-line"></i></a>
       </div>
    </div>
+   <script src="script.js"></script>
 </body>
 </html>

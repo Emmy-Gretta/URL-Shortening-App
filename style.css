@@ -48,7 +48,7 @@ body {
    width: 400px;
 }
 
-.desc input[type="submit"]{
+.desc button{
    width: 400px;
    border: none;
    background: #333;
@@ -112,7 +112,7 @@ table,th, td{
    }
 
 @media only screen and (max-width: 600px) {
-   .desc input[type="submit"]{
+   .desc button{
       width: 100%;
       border: none;
       background: #333;
