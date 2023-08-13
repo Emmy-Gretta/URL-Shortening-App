@@ -51,7 +51,7 @@ app.get("/api/get-all-short-urls",(req,res) => {
             message: err.message
          });
       }else{
-         res.status(200).json({result});
+         res.status(200).json(result);
       }
    })
 })
