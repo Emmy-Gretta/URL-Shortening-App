@@ -1,2 +1,7 @@
-# URL-Shortening-App
-URL shortening app with HTML, CSS, Javascript, NodeJS and Mysql
+URl Shortening app
+*Fullstack
+"Backend:
+           -Nodejs
+*Frontend:
+           -HTML
+           -CSS

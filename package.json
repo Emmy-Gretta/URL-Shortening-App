@@ -1,26 +1,17 @@
 {
-  "name": "url-shortening-app",
+  "name": "url-shortener",
   "version": "1.0.0",
-  "description": "URL Shortening App",
-  "main": "script.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Emmy-Gretta/URL-Shortening-App.git"
-  },
-  "keywords": [
-    "shortening"
-  ],
-  "author": "Emmy-Gretta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Emmy-Gretta/URL-Shortening-App/issues"
-  },
-  "homepage": "https://github.com/Emmy-Gretta/URL-Shortening-App#readme",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "mysql": "^2.18.1"
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }

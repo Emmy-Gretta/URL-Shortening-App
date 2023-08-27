@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple url shortener</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+          <h1>Url Shortener!</h1>
+        </div>
+      </header>
+    <div class="container">
+       <div class="sub-container">
+         <p><b>Original_url: </b><%= urlObj.original_url%></p>
+        <a href="<%= urlObj.shorturl%>" target="_blank"><b>Visit new Url: </b><%= urlObj.shorturl%></a>
+       </div>
+       <!-- <div class="wrapper">
+        <h1>Short U</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Original_url</th>
+                    <th>Short_Url</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= urlObj.original_url  %></td>
+                    <td><a href="<%= urlObj.shorturl %>" target="_blank"><%= urlObj.shorturl %></a></td>
+                </tr>
+            </tbody>
+        </table>
+       </div> -->
+    </div>
+    <footer>
+        <p>_-_-_-_&copy;2023</p>
+      </footer>
+</body>
+</html>
